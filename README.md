@@ -1,1 +1,1 @@
-# go_stydy
+# go_study
