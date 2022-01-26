@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-func main() {
+func studyDataType() {
 	var (
 		b  bool
 		in int

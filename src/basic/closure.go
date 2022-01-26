@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 func nextValue() (f1 func() int) {
 	i := 0
@@ -11,7 +14,7 @@ func nextValue() (f1 func() int) {
 	return
 }
 
-func main() {
+func TestClosure(t *testing.T) {
 	next := nextValue()
 
 	for i := 0; i < 3; i++ {

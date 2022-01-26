@@ -1,6 +1,6 @@
 package main
 
-func main() {
+func studyVar() {
 	var a int
 	var f float32 = 11.
 

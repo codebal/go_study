@@ -1,6 +1,6 @@
 package main
 
-func main() {
+func studyAnonymousFunc() {
 	{
 		//익명함수
 		sum := func(n ...int) int {

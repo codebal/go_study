@@ -1,8 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func main() {
+func studyArray() {
 	{
 		var a [3]int
 		a[0] = 1
