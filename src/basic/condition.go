@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func studyCondition() {
 	if k := 0; k == 1 {
 		println("k==", k)
 	} else if k > 1 {

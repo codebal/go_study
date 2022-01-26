@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func studySlice() {
 	{
 		var a []int
 		a = []int{1, 2, 3}

@@ -7,7 +7,7 @@ type Pointer struct {
 	var2 int
 }
 
-func main() {
+func studyFunc() {
 	msg := "Hello"
 	say(msg)
 
