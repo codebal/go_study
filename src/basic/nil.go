@@ -1,4 +1,4 @@
-package main
+package basic
 
 func studyNil() {
 	var str string

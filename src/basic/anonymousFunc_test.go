@@ -1,6 +1,11 @@
-package main
+package basic
 
-func studyAnonymousFunc() {
+import (
+	"fmt"
+	"testing"
+)
+
+func StudyAnonymousFunc() {
 	{
 		//익명함수
 		sum := func(n ...int) int {
@@ -37,6 +42,8 @@ func studyAnonymousFunc() {
 		r := calc(func(a, b int) int { return a + b }, 10, 20)
 		println("r == ", r)
 	}
+
+	fmt.Println("print not working on testing?")
 }
 
 func calc(f func(int, int) int, a int, b int) int {
@@ -45,3 +52,8 @@ func calc(f func(int, int) int, a int, b int) int {
 }
 
 type calculator func(int, int) int
+
+func TestAnonymousFunc(t *testing.T) {
+	t.Log("why!")
+	StudyAnonymousFunc()
+}

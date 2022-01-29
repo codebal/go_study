@@ -1,6 +1,8 @@
-package main
+package basic
 
-func studyPackage() {
+//import _ "go_study/src/basic/sub"
+
+func StudyPackage() {
 	println("studyPackage")
 
 }

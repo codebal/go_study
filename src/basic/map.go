@@ -1,4 +1,4 @@
-package main
+package basic
 
 import "fmt"
 
@@ -10,7 +10,7 @@ func studyMap() {
 		_ = idMap
 
 		map1 := make(map[int]string)
-		fmt.Printf("%v , %s\n", map1, map1)
+		fmt.Printf("%v\n", map1)
 	}
 	{
 		//literal
