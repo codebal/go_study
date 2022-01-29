@@ -1,4 +1,4 @@
-package main
+package basic
 
 func studyIterate() {
 	sum := 0

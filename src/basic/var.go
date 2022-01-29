@@ -1,4 +1,4 @@
-package main
+package basic
 
 func studyVar() {
 	var a int
