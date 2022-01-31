@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-func studyDataType() {
+func studyDataType_1() {
 	var (
 		b  bool
 		in int
@@ -46,4 +46,18 @@ func studyDataType() {
 	if err == nil {
 		println("convertInt= ", convertInt+1)
 	}
+
+	var r1 rune = '한'
+	r2 := '\ud55c'
+	fmt.Printf("rune for unicode like hangle = %v, %v \n", r1, r2)
+}
+
+func studyDataType_2() {
+	fmt.Println("8 / 3 = ", 8/3)
+	fmt.Println("5 / 9 = ", 5/9)
+	fmt.Println("9 % 5 = ", 9%5)
+}
+
+func StudyDataType() {
+	studyDataType_2()
 }
