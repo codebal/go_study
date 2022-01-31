@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	basic.StudyGoroutine()
+	basic.StudyBit()
 }
