@@ -2,7 +2,7 @@ package basic
 
 import "fmt"
 
-func studySlice() {
+func studySlice_1() {
 	{
 		var a []int
 		a = []int{1, 2, 3}
@@ -91,11 +91,57 @@ func studySlice() {
 
 	{
 		//slice len cap 구조
-		arr1 := []int{0, 1, 2, 3, 4}
+		arr1 := []int{0, 1, 2, 3, 4, 5}
 		fmt.Println("arr1 = ", arr1, len(arr1), cap(arr1))
-		arr1 = arr1[2:4]
-		fmt.Println("arr1 = ", arr1, len(arr1), cap(arr1))
-		arr1 = append(arr1, 1, 4)
-		fmt.Println("arr1 = ", arr1, len(arr1), cap(arr1))
+		arr2 := arr1[2:4]
+		fmt.Println("arr2 = ", arr2, len(arr2), cap(arr2))
+		arr3 := append(arr2, 1, 4)
+		fmt.Println("arr3 = ", arr3, len(arr3), cap(arr3))
+		fmt.Println(arr1, arr2, arr3)
 	}
+}
+
+func studySlice_2() {
+	//arr1 := make([]int, 5)
+	arr1 := []int{}
+	fmt.Println(arr1, len(arr1), cap(arr1))
+	arr2 := append(arr1, 1, 2, 3)
+	fmt.Println(arr2, len(arr2), cap(arr2))
+}
+
+//slice is pointer
+//array is value
+func studySlice_3() {
+	arr1 := []int{1, 2, 3}
+	arr2 := arr1
+	arr2[0] = 10
+	fmt.Println(arr1, arr2)
+
+	arr3 := [3]int{1, 2, 3}
+	arr4 := arr3
+	arr4[0] = 10
+	fmt.Println(arr3, arr4)
+}
+
+//copy는 덮어쓰기
+//cap을 늘려주지 않는다
+func studySlice_4() {
+	arr1 := []int{1, 2, 3}
+	arr2 := []int{4, 5, 6, 7, 8}
+	fmt.Println(arr1, arr2)
+	copy(arr1, arr2)
+	fmt.Println(arr1, arr2)
+}
+
+func studySlice_5() {
+	arr1 := [5]int{1, 2, 3, 4, 5}
+	arr2 := arr1[:3]
+	arr3 := arr2
+	arr3[0] = 10
+
+	fmt.Println(arr1, arr2, arr3)
+}
+
+func StudySlice() {
+	studySlice_5()
 }
