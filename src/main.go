@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	basic.StudyBit()
+	basic.StudySlice()
 }

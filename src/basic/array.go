@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func studyArray() {
+func studyArray_1() {
 	{
 		var a [3]int
 		a[0] = 1
@@ -31,4 +31,17 @@ func studyArray() {
 		}
 		fmt.Println("a = ", a, len(a[0]), cap(a))
 	}
+}
+
+// ... 는 왜 있는거지? 없어도 되는데..
+func studyArray_2() {
+	list1 := [...]int{1, 2, 3, 4, 5}
+	for i, n := range list1 {
+		fmt.Println("i=", i, " n=", n)
+	}
+	fmt.Println(len(list1), cap(list1))
+}
+
+func StudyArray() {
+	studyArray_2()
 }
