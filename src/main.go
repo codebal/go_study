@@ -1,9 +1,7 @@
 package main
 
-import (
-	"go_study/src/basic"
-)
+import "go_study/src/utility"
 
 func main() {
-	basic.StudySlice()
+	utility.StudyHttp()
 }

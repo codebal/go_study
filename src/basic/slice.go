@@ -134,8 +134,8 @@ func studySlice_4() {
 }
 
 func studySlice_5() {
-	arr1 := [5]int{1, 2, 3, 4, 5}
-	arr2 := arr1[:3]
+	arr1 := [5]int{1, 2, 3, 4, 5} //array or slice
+	arr2 := arr1[:3]              //slice
 	arr3 := arr2
 	arr3[0] = 10
 
