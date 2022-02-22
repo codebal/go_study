@@ -1,7 +1,9 @@
 package main
 
-import "go_study/src/utility"
+import (
+	"go_study/src/utility"
+)
 
 func main() {
-	utility.StudyDatabase()
+	utility.StudyWebServer()
 }

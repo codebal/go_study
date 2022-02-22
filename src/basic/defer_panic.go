@@ -1,11 +1,12 @@
 package basic
 
 import (
+	"errors"
 	"fmt"
 	"os"
 )
 
-func StudyDeferPanic() {
+func studyDeferPanic_1() {
 	defer func() {
 		fmt.Println("여긴 마지막에 무조껀 실행")
 	}()
@@ -49,4 +50,25 @@ func openFile() {
 		println("파일 닫기")
 		f.Close()
 	}()
+}
+
+func studyDeferPanic_2() {
+	defer func() {
+		fmt.Println("run defer")
+		if r := recover(); r != nil {
+			fmt.Println("this is panic happened")
+			fmt.Printf("%v , %T \n", r, r)
+		}
+	}()
+
+	// a := "123123"
+	// _ = a[:99]
+	e1 := errors.New("testError")
+	if e1 != nil {
+		panic("hahaha")
+	}
+}
+
+func StudyDeferPanic() {
+	studyDeferPanic_2()
 }
