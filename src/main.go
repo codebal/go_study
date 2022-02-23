@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	utility.StudyWebServer()
+	utility.StudySmtp()
 }
