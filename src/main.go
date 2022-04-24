@@ -1,9 +1,7 @@
 package main
 
-import (
-	"go_study/src/utility"
-)
+import "go_study/src/database"
 
 func main() {
-	utility.StudySmtp()
+	database.StudyReplication()
 }
